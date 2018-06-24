@@ -1,0 +1,12 @@
+
+
+<form [formGroup]="registerForm" (ngSubmit)="login()">
+  Username <input type="text" formControlName="username">
+  <br>
+  Password <input type="password" formControlName="password">
+  <br>
+  <input type="submit" value ="Login" [disabled]="registerForm.invalid">
+<br>
+<a [routerLink]="['/sign-up']">Sign Up</a>
+
+</form>
